@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Container */
+.menu-container {
+    position: absolute;
+    min-width: 20.8333vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9259vh;
+    transform-origin: center center;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+}
+
+/* Alignements */
+.menu-container.align-left {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) scale(var(--scale, 1));
+    transform-origin: left center;
+}
+
+.menu-container.align-top-left {
+    left: 4rem;
+    top: 0.8rem;
+    transform: scale(var(--scale, 1));
+    transform-origin: left top;
+}
+
+.menu-container.align-top {
+    left: 50%;
+    top: 0.8rem;
+    transform: translateX(-50%) scale(var(--scale, 1));
+    transform-origin: center top;
+}
+
+.menu-container.align-top-right {
+    right: 3rem;
+    top: 0.8rem;
+    transform: scale(var(--scale, 1));
+    transform-origin: right top;
+}
+
+.menu-container.align-right {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) scale(var(--scale, 1));
+    transform-origin: right center;
+}
+
+.menu-container.align-bottom-right {
+    right: 3rem;
+    bottom: 0.8rem;
+    transform: scale(var(--scale, 1));
+    transform-origin: right bottom;
+}
+
+.menu-container.align-bottom {
+    left: 50%;
+    bottom: 0.8rem;
+    transform: translateX(-50%) scale(var(--scale, 1));
+    transform-origin: center bottom;
+}
+
+.menu-container.align-bottom-left {
+    left: 4rem;
+    bottom: 0.8rem;
+    transform: scale(var(--scale, 1));
+    transform-origin: left bottom;
+}
+
+.menu-container.align-center {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(var(--scale, 1));
+    transform-origin: center center;
+}
+
+/* Boutons bas */
+.menu-buttons {
+    display: flex;
+    justify-content: center;
+    gap: .5208vw;
+    font-size: .8333vw;
+    font-weight: 700;
+}
+
+.menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .4167vw;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #FFF;
+}
+
+.backspace-btn,
+.close-btn {
+    width: 10.6771vw;
+    height: 6.0185vh;
+    border-radius: .2604vw;
+    background: #161616;
+}
+
+.menu-button:hover {
+    background-color: #252525;
+    transform: scale(1.02);
+}
+
+/* Menu principal */
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9259vh;
+
+
+}
+
+/* Titre principal */
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 26px;
+    border-radius: 8px;
+    font-weight: 400;
+    color: #fff;
+    height: 100px;
+    background: linear-gradient(0deg, rgba(255, 0, 4, .5) 0%, rgba(0, 0, 0, .2) 100%);
+
+}
+
+
+.sub-head {
+    text-align: center;
+    font-size: 0.9vw;
+    color: #bbbbbb;
+    margin-bottom: 1vh;
+}
+
+/* Items */
+.menu .menu-items {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px 10px;
+    border-radius: 8px;
+    max-height: 41.6667vh;
+    background: rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    font-weight: 400;
+}
+
+.menu .menu-items .menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 20.4688vw;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.menu .menu-items .menu-item.selected {
+    /* rouge/orangé vif */
+    background: rgba(255, 0, 4, .5);
+}
+
+/* Checkbox style */
+.menu-checkbox {
+    width: 18px;
+    height: 18px;
+    border: 2px solid white;
+    border-radius: 3px;
+    background: transparent;
+}
+
+.menu-checkbox.checked {
+    background: #FB3B04;
+    border-color: #FB3B04;
+}
+
+/* Icônes */
+.menu-item-icon {
+    font-size: 1vw;
+    text-align: center;
+}
+
+.fas {
+    color: white;
+}
